@@ -1,4 +1,4 @@
-package search.film;
+package search.movie;
 
 public class Main {
 }

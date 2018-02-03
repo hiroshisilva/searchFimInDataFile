@@ -1,4 +1,4 @@
-group 'search.fim'
+group 'search.movies'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
