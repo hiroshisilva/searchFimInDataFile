@@ -21,7 +21,7 @@ public class FileReader implements Reader{
 
         Map<String, Set<String>> result = new HashMap<>();
 
-        Files.list(Paths.get(directory)).forEach(file ->{
+        Files.list(Paths.get(directory)).parallel().forEach(file ->{
 
             try {
                 Set<String> words = readFile(file);

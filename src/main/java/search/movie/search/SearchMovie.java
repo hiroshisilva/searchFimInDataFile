@@ -11,7 +11,7 @@ public class SearchMovie {
     public Set<String> find(Map<String, Set<String>> dataSet,String... filterString){
         List<String> filter = Arrays.asList(filterString);
 
-        return dataSet.entrySet().stream().filter(p -> p.getValue().containsAll(filter)).map(k-> k.getKey()).collect(Collectors.toSet());
+        return dataSet.entrySet().parallelStream().filter(p -> p.getValue().containsAll(filter)).map(k-> k.getKey()).collect(Collectors.toSet());
     }
 
 }

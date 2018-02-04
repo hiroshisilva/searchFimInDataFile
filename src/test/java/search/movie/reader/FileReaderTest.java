@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.Map;
 import java.util.Set;
 
@@ -15,8 +16,11 @@ public class FileReaderTest {
     private Reader reader;
 
     @Before
-    public void setUp(){
-        this.reader = new FileReader("/users/andre/Documents/workspace/cases/data/");
+    public void setUp() throws URISyntaxException {
+
+        ClassLoader classLoader = getClass().getClassLoader();
+
+        this.reader = new FileReader(classLoader.getResource("data").getPath());
     }
 
     @Test
