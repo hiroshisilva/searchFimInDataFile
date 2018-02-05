@@ -7,7 +7,7 @@ Esse projeto faz buscas de filmes indexando os dados apartir de arquivos.
 - Pasta data dentro do diretório de execução do Jar
 
 
-### Build.###
+### Build.
 Para efetuar o Build basta digitar a linha abaixo dentro do diretório do projeto.
 
 Linux:
@@ -28,4 +28,4 @@ Windows:
 ### Analise de tempo de execução ###
  Após a execução do jar será gerado um arquivo searchMovie.log no mesmo diretório do jar.
  O arquivo searchMovie.log contem o log com os tempos de execução tanto do carregamento dos dados, quanto da busca,
- a busca estará tagada como `search data`
+ a busca estará tagada como `search data`.
