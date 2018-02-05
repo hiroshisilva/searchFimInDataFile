@@ -29,3 +29,7 @@ Windows:
  Após a execução do jar será gerado um arquivo searchMovie.log no mesmo diretório do jar.
  O arquivo searchMovie.log contem o log com os tempos de execução tanto do carregamento dos dados, quanto da busca,
  a busca estará tagada como `search data`.
+
+ ### Dados de Teste ###
+
+ Os dados de teste estão armazenados no diretório data dentro do repositório.
